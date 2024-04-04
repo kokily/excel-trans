@@ -1,0 +1,33 @@
+{
+  "name": "excel-trans",
+  "version": "1.0.0",
+  "description": "",
+  "main": "order.js",
+  "scripts": {
+    "order": "ts-node-dev --respawn order.ts",
+    "state": "ts-node-dev --respawn state.ts",
+    "hyundai": "ts-node-dev --respawn hyundai.ts",
+    "department": "ts-node-dev --respawn department.ts",
+    "build:order": "npx tsc order.ts && pkg ./order.js --targets node18-win-x64",
+    "build:state": "npx tsc state.ts && pkg ./state.js --targets node18-win-x64",
+    "build:hyundai": "npx tsc hyundai.ts && pkg ./hyundai.js --targets node18-win-x64"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "csvtojson": "^2.0.10",
+    "file-saver": "^2.0.5",
+    "iconv": "^3.0.1",
+    "jschardet": "^3.0.0",
+    "pkg": "^5.8.1",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/file-saver": "^2.0.7",
+    "@types/iconv": "^3.0.1",
+    "@types/node": "^20.5.6",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.2.2"
+  }
+}
